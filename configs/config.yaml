@@ -3,12 +3,12 @@ mysql:
   port: 3307
   database: "ecommerce_source"
   user: "vijay"
-  password: "Rohit@45"
+  password: 
 
 snowflake:
   account: "EJTQBXU-PT64687"
   user: "VIJAYPASAM"
-  password: "Hemankitha2Perabathini"
+  password: 
   warehouse: "WH_ETL_DEV"
   database: "CUSTOMER360_DEV"
   schema_raw: "RAW"
