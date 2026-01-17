@@ -59,6 +59,8 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./:/opt/airflow/project 
+     environment:
+      - _PIP_ADDITIONAL_REQUIREMENTS=PyYAML mysql-connector-python snowflake-connector-python
     
     
   airflow-scheduler:
@@ -70,6 +72,8 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./:/opt/airflow/project   
+     environment:
+      - _PIP_ADDITIONAL_REQUIREMENTS=PyYAML mysql-connector-python snowflake-connector-python
 
 volumes:
   postgres-db-volume:

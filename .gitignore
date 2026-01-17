@@ -1,0 +1,4 @@
+# Airflow & app logs
+logs/
+logs/*
+airflow/logs/
